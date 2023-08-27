@@ -1,38 +1,41 @@
+/* Reset default margin and padding */
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set a background color and center content */
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  min-height: 100vh;
+  background-color: #f7f7f7;
 }
 
-.App-link {
-  color: #61dafb;
+/* Styling for Course List */
+.CourseList, .ApiCourseList {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.CourseList h2, .ApiCourseList h2 {
+  margin-bottom: 10px;
 }
+
+.CourseList ul, .ApiCourseList ul {
+  list-style: none;
+  padding: 0;
+}
+
+.CourseList li, .ApiCourseList li {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+/* Optional: Add more specific styling for other elements if needed */
